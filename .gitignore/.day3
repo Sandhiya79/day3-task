@@ -1,0 +1,30 @@
+#import library
+from tkinter import*
+from tkinter import ttk
+window=Tk()
+#declaring window Title
+window.title ("Registration Screen")
+#declaring window size
+window.geometry("500*500")
+#declaring window color
+window.configure(background="blue");
+#below four fields are declared
+Firstname=Label(window,text="Firstname").grid(row=0,column=0)
+Lastname=Label(window,text="Secondname").grid(row=1,column=0)
+Email=Label(window,text="Emil id").grid(row=2,column=0)
+Mobile=Label(window,text="Contact Number").grid(row=3,column=0)
+Firstname1=Entry(window).grid(row=0,column=1)
+Lastname1=Entry(window).grid(row=1,column=1)
+Emil1=Entry(window).grid(row=2,column=1)
+Mobile1=Entry(window).grid(row=3,column=1)
+Firstname2=Entry(window).grid(row=0,colum=2)
+Lastname2=Entry(window).grid(row=1,column=2)
+Email2=Entry(window).grid(row=2,column=2)
+Mobile2=Entry(window).gris(row=3,column=2)
+#function declaration
+def clicked():
+    res="Welcome to"+txt.get()
+    Ibl.configure(text=res)
+    btn=ttk.Button(window,text="submit").grid(row=4,column=0)
+    window.mainloop()
+
